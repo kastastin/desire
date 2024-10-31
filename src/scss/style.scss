@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  &__btn {
+  &__button {
     padding: 0;
     border: none;
     background-color: transparent;
@@ -36,5 +36,128 @@
     @extend %title-font;
     color: rgba(54, 56, 56, 0.9);
     line-height: 22;
+  }
+}
+
+.footer {
+  &__content {
+    padding: 60px 0 80px;
+    background-color: #dfdfdf;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    width: 540px;
+  }
+  &__info-title {
+    margin-bottom: 14px;
+    @extend %title-font;
+    color: $title-color;
+    line-height: 23px;
+  }
+  &__info-text {
+    margin-bottom: 16px;
+    max-width: 475px;
+  }
+  &__info-email {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 22px;
+    padding-left: 30px;
+    color: $title-color;
+    font-size: 14px;
+    font-weight: 600;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 16px;
+      height: 12px;
+      background-image: url(../images/footer/mail.svg);
+    }
+  }
+  &__form {
+    display: flex;
+    gap: 0 9px;
+  }
+  &__form-input {
+    flex-grow: 1;
+    padding: 6px 10px 6px 18px;
+    border: 1px solid rgba($title-color, 0.7);
+    border-radius: 21px;
+    background-color: transparent;
+    outline: none;
+    &::placeholder {
+      @extend %default-font;
+      color: #a1a1a1;
+    }
+  }
+  &__form-button {
+    min-width: 160px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 21px;
+    background-color: $title-color;
+    color: #fffff0;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  &__social-list {
+    width: 125px;
+    margin-right: auto;
+    margin-left: 100px;
+  }
+  &__social-link {
+    position: relative;
+    padding-left: 28px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    &--facebook::before {
+      background-image: url(../images/footer/facebook.svg);
+    }
+    &--instagram::before {
+      background-image: url(../images/footer/instagram.svg);
+    }
+    &--pinterest::before {
+      background-image: url(../images/footer/pinterest.svg);
+    }
+    &--whatsapp::before {
+      background-image: url(../images/footer/whatsapp.svg);
+    }
+    &--youtube::before {
+      background-image: url(../images/footer/youtube.svg);
+    }
+  }
+  &__social-item,
+  &__menu-item {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  &__social-link,
+  &__menu-link {
+    color: #707070;
+  }
+  &__menu {
+    width: 125px;
+    margin-right: 60px;
+  }
+  &__copyright {
+    padding: 42px 0;
+    background-color: $title-color;
+    color: #a1a1a1;
+    text-align: center;
   }
 }
