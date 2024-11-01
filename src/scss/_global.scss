@@ -4,8 +4,10 @@ body {
 }
 
 body {
+  min-width: 320px;
   @extend %default-font;
   color: $default-color;
+  overflow-x: hidden;
 }
 
 .wrapper {
