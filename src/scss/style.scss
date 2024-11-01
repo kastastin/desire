@@ -234,6 +234,35 @@
   }
 }
 
+.decor {
+  min-height: 600px;
+  padding: 170px 0 155px;
+  background-image: url(../images/decor-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__title {
+    position: relative;
+    max-width: 730px;
+    margin-bottom: 22px;
+    padding-bottom: 22px;
+    color: $title-color;
+    font-size: 60px;
+    line-height: 80px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 200px;
+      height: 1px;
+      background-color: #6d7278;
+    }
+  }
+  &__text {
+    max-width: 540px;
+  }
+}
+
 .footer {
   &__content {
     padding: 60px 0 80px;
