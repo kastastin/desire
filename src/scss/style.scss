@@ -131,6 +131,7 @@
     position: relative;
     margin-bottom: 26px;
     padding-bottom: 26px;
+    @extend %title-font;
     color: $title-color;
     font-size: 110px;
     line-height: 135px;
@@ -156,6 +157,7 @@
     position: relative;
     margin-bottom: 25px;
     padding-bottom: 25px;
+    @extend %title-font;
     color: $title-color;
     font-size: 36px;
     line-height: 51px;
@@ -212,6 +214,7 @@
     position: relative;
     margin-bottom: 19px;
     padding-bottom: 19px;
+    @extend %title-font;
     color: $title-color;
     font-size: 20px;
     line-height: 25px;
@@ -245,6 +248,7 @@
     max-width: 730px;
     margin-bottom: 22px;
     padding-bottom: 22px;
+    @extend %title-font;
     color: $title-color;
     font-size: 60px;
     line-height: 80px;
@@ -260,6 +264,79 @@
   }
   &__text {
     max-width: 540px;
+  }
+}
+
+.works-path {
+  padding: 80px 0 30px;
+  &__title {
+    margin-bottom: 40px;
+    @extend %title-font;
+    color: $title-color;
+    font-size: 36px;
+    line-height: 51px;
+    text-align: center;
+  }
+  &__items-box {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 2px solid rgba($title-color, 0.7);
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $title-color;
+    }
+  }
+  &__item {
+    position: relative;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__item--production {
+    margin-left: 317px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 2px;
+      height: 20px;
+      background-color: rgba($title-color, 0.7);
+    }
+  }
+  &__item--production,
+  &__item--consultation {
+    padding-bottom: 38px;
+  }
+  &__item--measuring {
+    margin-left: 305px;
+    padding-top: 38px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 20px;
+      background-color: rgba($title-color, 0.7);
+    }
+  }
+  &__item-title {
+    margin-left: 13px;
+    @extend %title-font;
+    color: $title-color;
+  }
+  &__item-text {
+    margin-top: 13px;
   }
 }
 
