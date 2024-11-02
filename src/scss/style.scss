@@ -37,6 +37,20 @@
     color: rgba(54, 56, 56, 0.9);
     line-height: 22;
   }
+  &__list-link--active {
+    position: relative;
+    padding-bottom: 4px;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      border-radius: 1px;
+      background-color: rgba($title-color, 0.7);
+    }
+  }
 }
 
 .rightside-menu {
@@ -96,6 +110,32 @@
   }
   &__img {
     max-width: 485px;
+  }
+}
+
+.breadcrumbs {
+  padding: 13px 0 14px;
+  background-color: rgba(#dfdfdf, 0.5);
+  &__list {
+    display: flex;
+  }
+  &__item {
+    position: relative;
+    margin-right: 12px;
+  }
+  &__item::after {
+    content: "/";
+    position: absolute;
+    top: 1px;
+    right: -9px;
+    color: $default-color;
+  }
+  &__item:last-child::after {
+    display: none;
+  }
+  &__link {
+    color: $default-color;
+    font-size: 14px;
   }
 }
 
