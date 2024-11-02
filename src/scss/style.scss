@@ -50,6 +50,7 @@
   background-color: #fff;
   box-shadow: -2px 3px 17px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.3s;
+  z-index: 5;
   &.rightside-menu--close {
     transform: translateX(500%);
   }
@@ -377,6 +378,45 @@
     height: 100%;
     max-height: 1150px;
     object-fit: cover;
+  }
+}
+
+.blog-box {
+  padding-bottom: 100px;
+  &__title {
+    max-width: 430px;
+    margin: 0 auto 30px;
+    @extend %title-font;
+    color: $title-color;
+    font-size: 36px;
+    line-height: 51px;
+    text-align: center;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 30px;
+  }
+  &__image-link {
+    display: inline-block;
+    margin-bottom: 19px;
+  }
+  &__links {
+    margin-bottom: 9px;
+    color: #707070;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  &__date,
+  &__author,
+  &__theme {
+    color: inherit;
+  }
+  &__item-title {
+    @extend %title-font;
+    color: $title-color;
+    font-size: 24px;
+    line-height: 38px;
   }
 }
 
