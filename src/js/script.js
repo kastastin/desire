@@ -14,9 +14,18 @@ $(function () {
     autoplay: true,
   });
 
-  const mixer = mixitup(".gallery__inner", {
-    load: {
-      filter: ".living",
-    },
+  $(".contact-slider").slick({
+    slidesToShow: 10,
+    slidesToScroll: 10,
+    dots: true,
+    arrows: false,
   });
+
+  if ($(".gallery__inner").length) {
+    const mixer = mixitup(".gallery__inner", {
+      load: {
+        filter: ".living",
+      },
+    });
+  }
 });
