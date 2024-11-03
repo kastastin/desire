@@ -192,7 +192,7 @@
 }
 
 .new-collection {
-  padding: 45px 0 105px;
+  padding: 45px 0 35px;
   text-align: center;
   &__title {
     position: relative;
@@ -224,6 +224,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 0 30px;
+  padding-bottom: 70px;
   &__item {
     position: relative;
     &:hover {
@@ -580,6 +581,17 @@
     margin-top: -2px;
     border-radius: 4px;
     background-color: $title-color;
+  }
+}
+
+.partners {
+  padding: 16px 0 60px;
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  &__img {
+    margin: 0 auto;
   }
 }
 
