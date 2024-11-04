@@ -123,6 +123,7 @@
   z-index: 100;
   &__list {
     display: flex;
+    overflow-x: auto;
   }
   &__item {
     position: relative;
