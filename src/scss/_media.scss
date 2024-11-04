@@ -30,6 +30,15 @@
     }
   }
 
+  .about {
+    &__content {
+      padding-bottom: 40px;
+    }
+    &__text {
+      padding-left: 0;
+    }
+  }
+
   .footer {
     &__info {
       width: 380px;
@@ -99,6 +108,24 @@
     &__buttons {
       display: grid;
       gap: 10px;
+    }
+  }
+
+  .about {
+    &__preview {
+      padding: 80px 0;
+    }
+  }
+
+  .inspiration {
+    &__img {
+      display: none;
+    }
+  }
+
+  .partners {
+    &__items {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
@@ -268,6 +295,24 @@
     &__item-title {
       font-size: 22px;
       line-height: 34px;
+    }
+  }
+
+  .about {
+    &__preview-title {
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+
+  .inspiration {
+    &__item-text,
+    &__item-num {
+      font-size: 16px;
+      line-height: 23px;
+    }
+    &__item-text {
+      margin-right: 10px;
     }
   }
 }
