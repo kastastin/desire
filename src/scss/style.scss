@@ -229,7 +229,7 @@
 .collection {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 0 30px;
+  gap: 30px;
   padding-bottom: 70px;
   &__item {
     position: relative;
@@ -286,7 +286,6 @@
 }
 
 .decor {
-  min-height: 600px;
   padding: 170px 0 155px;
   background-image: url(../images/decor-bg.jpg);
   background-repeat: no-repeat;
