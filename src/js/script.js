@@ -1,10 +1,16 @@
 $(function () {
+  // right menu (>768px)
   $(".header__button").on("click", function () {
     $(".rightside-menu").removeClass("rightside-menu--close");
   });
 
   $(".rightside-menu__close").on("click", function () {
     $(".rightside-menu").addClass("rightside-menu--close");
+  });
+
+  // menu (<540px)
+  $(".header__button-menu").on("click", function () {
+    $(".menu").toggleClass("menu--open");
   });
 
   $(".top__slider").slick({

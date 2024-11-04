@@ -17,6 +17,9 @@
     background-color: transparent;
     cursor: pointer;
   }
+  &__button-menu {
+    display: none;
+  }
 }
 
 .logo {
@@ -35,7 +38,7 @@
   &__list-link {
     @extend %title-font;
     color: rgba(54, 56, 56, 0.9);
-    line-height: 22;
+    line-height: 22px;
   }
   &__list-link--active {
     position: relative;
@@ -1156,3 +1159,5 @@
     text-align: center;
   }
 }
+
+@import "media";
